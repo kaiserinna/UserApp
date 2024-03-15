@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ListUserInRecycleView extends AppCompatActivity {
+public class ListUserInRecycleViewActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 

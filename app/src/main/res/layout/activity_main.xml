@@ -20,7 +20,7 @@
         app:layout_constraintVertical_bias="0.287" />
 
     <Button
-        android:id="@+id/addUserButtonMain"
+        android:id="@+id/addUserButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="switchToAddUser"

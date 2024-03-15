@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void switchToListUserInRecycleView(View view) {
-        Intent intent = new Intent(this, ListUserInRecycleView.class);
+        Intent intent = new Intent(this, ListUserInRecycleViewActivity.class);
         startActivity(intent);
 
     }
