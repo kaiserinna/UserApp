@@ -16,6 +16,9 @@ public class UserStorage {
     public void addUserToStorage(User user) {
         users.add(user);
     }
+    public ArrayList<User> getUsers() {
+        return users;
+    }
 
     public User getUser(int n) {
         return users.get(n);
