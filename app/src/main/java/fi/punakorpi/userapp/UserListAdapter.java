@@ -27,7 +27,7 @@ public class UserListAdapter extends RecyclerView.Adapter<UsersViewHolder> {
         holder.textLastName.setText(user.getLastName());
         holder.textEmail.setText(user.getEmail());
         holder.textDegreeProgram.setText(user.getDegreeProgram());
-        holder.textDegree.setText(user.getDegree());
+        holder.textUserDegrees.setText(user.getDegree());
     }
 
     @Override
