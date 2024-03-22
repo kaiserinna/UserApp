@@ -20,6 +20,6 @@ public class UsersViewHolder extends RecyclerView.ViewHolder {
         textLastName = itemView.findViewById(R.id.textLastName);
         textEmail = itemView.findViewById(R.id.textEmail);
         textDegreeProgram = itemView.findViewById(R.id.textDegreeProgram);
-        textUserDegrees = itemView.findViewById((R.id.textDegree));
+        textUserDegrees = itemView.findViewById((R.id.textUserDegrees));
     }
 }
