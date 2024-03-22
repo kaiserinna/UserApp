@@ -10,9 +10,10 @@ import java.util.ArrayList;
 import java.util.Comparator;
 
 public class UserStorage {
-    private ArrayList<User> users = new ArrayList<>();
     private static UserStorage userStorage = null;
     private static String fileName = "users.data";
+    private ArrayList<User> users = new ArrayList<>();
+
 
     public static UserStorage getInstance() {
         if (userStorage == null) {

@@ -1,5 +1,6 @@
 package fi.punakorpi.userapp;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
@@ -17,6 +18,7 @@ import java.util.ArrayList;
 
 public class AddUserActivity extends AppCompatActivity {
 
+    private Context context;
     private TextView firstName;
     private TextView lastName;
     private TextView email;
@@ -35,7 +37,9 @@ public class AddUserActivity extends AppCompatActivity {
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
+            context = AddUserActivity.this;
             return insets;
+
         });
 
         firstName = findViewById(R.id.editFirstName);
@@ -69,8 +73,8 @@ public class AddUserActivity extends AppCompatActivity {
         String degreeTxt = getString();
         User u = new User(firstNameTxt, lastNameTxt, emailTxt, degreeProgramTxt, degreeTxt);
         UserStorage.getInstance().addUserToStorage(u);
-        UserStorage.getInstance().saveUsersToFile(Context context);
-    //TODO; miten saan contextin mainista tähän tonne välitettäväksi?
+        UserStorage.getInstance().saveUsersToFile(context);
+
     }
 
     @NonNull
