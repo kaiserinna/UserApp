@@ -11,6 +11,7 @@ public class UsersViewHolder extends RecyclerView.ViewHolder {
     public TextView textLastName;
     public TextView textEmail;
     public TextView textDegreeProgram;
+    public TextView textDegree;
 
 
     public UsersViewHolder(@NonNull View itemView) {
@@ -19,5 +20,6 @@ public class UsersViewHolder extends RecyclerView.ViewHolder {
         textLastName = itemView.findViewById(R.id.textLastName);
         textEmail = itemView.findViewById(R.id.textEmail);
         textDegreeProgram = itemView.findViewById(R.id.textDegreeProgram);
+        textDegree = itemView.findViewById((R.id.textDegree));
     }
 }

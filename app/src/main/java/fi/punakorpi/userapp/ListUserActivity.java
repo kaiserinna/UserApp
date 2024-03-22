@@ -1,5 +1,6 @@
 package fi.punakorpi.userapp;
 
+import android.content.Context;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -10,7 +11,13 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-public class ListUserInRecycleViewActivity extends AppCompatActivity {
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
+import java.util.ArrayList;
+
+public class ListUserActivity extends AppCompatActivity {
 
     private RecyclerView recyclerView;
 
@@ -28,7 +35,5 @@ public class ListUserInRecycleViewActivity extends AppCompatActivity {
 
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(new UserListAdapter(getApplicationContext()));
-
-
     }
 }
